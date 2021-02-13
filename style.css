@@ -51,17 +51,21 @@
     }
 
     textarea {
-      
       resize: none;
-      
+      border-top: none;
+      border-color: grey;
     }
 
     .panel{
       float: left;
       width: 50%;
+      border-left: none;
     }
 
     iframe{
-      border-top: none;
-      border-color: grey;
+      border: none;
+    }
+
+    .hidden{
+      display: none;
     }

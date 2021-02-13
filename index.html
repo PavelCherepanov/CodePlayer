@@ -10,9 +10,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <link rel="stylesheet" href="style.css" type="text/css">
-
-    <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
-    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
     
 </head>
 <body>
@@ -30,7 +27,11 @@
   </div>
 
   <div id="bodyContainer">
-    <textarea id="htmlPanel" class="panel">Hello World</textarea>
+    <textarea id="htmlPanel" class="panel"><p id="pa">Hello World</p></textarea>
+
+    <textarea id="cssPanel" class="panel hidden">p { color: green; }</textarea>
+
+    <textarea id="jsPanel" class="panel hidden">document.getElementById('pa').innerHTML = 'nhnhnhh';</textarea>
 
     <iframe id="outputPanel" class="panel"></iframe>
   </div>
